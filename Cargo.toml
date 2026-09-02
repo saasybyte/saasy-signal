@@ -1,0 +1,28 @@
+[package]
+name = "saasy-signal"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4.12"
+actix-ws = "0.3"
+base64 = "0.22"
+hmac = "0.12"
+config = "0.15"
+dotenvy = "0.15"
+futures-util = "0.3"
+jsonwebtoken = { version = "10.2.0", features = ["rust_crypto"] }
+num_cpus = "1.17"
+prost = "0.13"
+reqwest = { version = "0.12", features = ["json"] }
+saasy-proto-rust = { git = "https://github.com/saasybyte/saasy-proto-rust.git", branch = "main" }
+serde = { version = "1.0", features = ["derive"] }
+sha1 = "0.10"
+serde_json = "1.0"
+thiserror = "2.0"
+tokio = { version = "1.46", features = ["full"] }
+tokio-stream = "0.1"
+tonic = "0.13"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
+uuid = { version = "1.17", features = ["v4"] }

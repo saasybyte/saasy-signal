@@ -1,0 +1,10 @@
+target/
+.git/
+.gitignore
+.env
+.claude/
+.vscode/
+.zed/
+CLAUDE.md
+Makefile
+config/

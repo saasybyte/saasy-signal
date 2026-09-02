@@ -1,0 +1,11 @@
+host = "0.0.0.0"
+port = 3000
+
+actix_workers = 2
+
+sfu_http_url = "http://127.0.0.1:9091"
+sfu_grpc_url = "http://127.0.0.1:50051"
+
+core_grpc_url = "" # Do not populate
+
+jwt_public_key = "" # Do not populate

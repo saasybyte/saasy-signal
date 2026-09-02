@@ -1,0 +1,25 @@
+[alias]
+lint = """
+clippy -- \
+-W clippy::all \
+-W clippy::pedantic \
+-W clippy::nursery \
+-W clippy::unwrap_used \
+-W clippy::expect_used \
+-A clippy::no_effect_underscore_binding \
+-A clippy::missing_const_for_fn
+"""
+
+[build]
+rustflags = [
+    "-Wclippy::all",
+    "-Wclippy::pedantic",
+    "-Wclippy::nursery",
+    "-Wclippy::unwrap_used",
+    "-Wclippy::expect_used",
+    "-Aclippy::no_effect_underscore_binding",
+    "-Aclippy::missing_const_for_fn"
+]
+
+[net]
+git-fetch-with-cli = true
